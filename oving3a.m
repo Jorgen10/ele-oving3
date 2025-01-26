@@ -7,7 +7,7 @@ Tp = 5; % ønsket periodetid
 f_signal = 1/Tp;   % desired
 
 % antall sinusledd
-M = ..;    
+M = 10;
 
 % tidsvektor
 t = 0:0.01:10;
@@ -18,9 +18,9 @@ set(gcf,'position',[200 600   750  500])
 y = 0;
 
 for n=1:M
-    B(n) = ..;
-    f(n) = ..;
-    y_n = ...;
+    B(n) = 1/n;
+    f(n) = n*f_signal;
+    y_n = B(n)*sin(2*pi*f(n)*t);
     y = y + y_n;
 
     subplot(2,2,1)
