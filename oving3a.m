@@ -7,7 +7,7 @@ Tp = 5; % ønsket periodetid
 f_signal = 1/Tp;   % desired
 
 % antall sinusledd
-M = 10;
+M = 15;
 
 % tidsvektor
 t = 0:0.01:10;
