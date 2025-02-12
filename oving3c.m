@@ -3,7 +3,7 @@ clear; close all; clc
 
 % Velg samplingsfrekvenser i området 0.6 < fs < 3 Hz
 % Start gjerne på fs=3 og reduser i steg på 0.2 Hz 
-fs = 3;  % [Hz]
+fs = 0.6;  % [Hz]
 
 %-------------------------------------------------------------
 % Lager først analogt signal u_a basert på 
