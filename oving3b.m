@@ -2,7 +2,7 @@
 clear; close all; clc
 
 % Velg først din helt unike samplingsfrekvens i området 32<fs<48
-fs = ...;           % [Hz], samplingskrekvens
+fs = 4           % [Hz], samplingskrekvens
 
 % Velg dine frekvenser f_a for det analoge signal.
 % Velg typisk frekvensene 1, 5, 10, 15, 20, ..., 2*fs
