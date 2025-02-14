@@ -5,19 +5,19 @@ clear; close all; clc
 % Tidspunkt og målinger i {t_k} og {u_k}.
 t_slutt = 3;
 Ts = 0.4;
-t = ..    % Skriv t som en vektor/array som t=fra:step:til
-u = ..    % Skriv uttrykket for u = 2*t^2. Husk elementvis operasjoner.
+t = 0:Ts:t_slutt;    % Skriv t som en vektor/array som t=fra:step:til
+u = 2 * t.^2;  % Skriv uttrykket for u = 2*t^2. Husk elementvis operasjoner.
 
 % Initialverdier integrasjon og derivasjon
-y(1) = ..;
-v(1) = ..;
+y(1) = 0;
+v(1) = 0;
 
 for k = 2:length(t)
-    % ------------- Trapesmetoden --------------
-    y(k) = ..
+    % ------------- Trapesmetoden -------------
+    y(k) = y(k-1) + Ts/2*(u(k-1)+u(k));
 
     % ------------- Bakoverderivasjon --------------
-    v(k) = ..
+    v(k) = (u(k)-u(k-1))/Ts;
 end
 
 figure
