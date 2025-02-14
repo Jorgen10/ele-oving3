@@ -9,8 +9,8 @@ figure(1)
 t_slutt = 10;     % hvor lenge skal "eksperimentet" vare
 k = 1;            % initialverdi indeks
 stopp = 0;        % betingelse for while-løkken
-noise = 1;        % skal målingene ha støy
-pausetid = 0.3;   % hvor lang skal pausen i while-løkken være 
+noise = 0;        % skal målingene ha støy
+pausetid = 0.4;   % hvor lang skal pausen i while-løkken være 
 
 while ~stopp
     if k == 1
